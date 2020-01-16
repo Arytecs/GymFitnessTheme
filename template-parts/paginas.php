@@ -5,6 +5,17 @@
         the_post_thumbnail('blog', array('class' => 'imagen-destacada'));
     endif;
     ?>
+
+    <?php
+    //Revisar si el custom post es clases
+    if (get_post_type() === 'gymfitness_clases') :
+        $horaInicio = get_field('hora_inicio');
+        $horaFin = get_field('hora_fin');
+    ?>
+        <p class="informacion-clase"><?php the_field('dias_clase'); ?> - <?php echo $horaInicio ?> a <?php echo $horaFin ?></p>
+    <?php
+    endif;
+    ?>
     <?php the_content(); ?>
 
 <?php endwhile; ?>

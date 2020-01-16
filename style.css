@@ -94,22 +94,25 @@ img {
     width: 95%;
     margin: 0 auto;
 }
-hr{
+
+hr {
     border: 1px solid var(--grisClaro);
 }
 
-.imagen-destacada{
-    margin-bottom: 3rem;   
+.imagen-destacada {
+    margin-bottom: 3rem;
 }
 
 /** Utilidades**/
-.text-center{
+.text-center {
     text-align: center;
 }
-.texto-primario{
+
+.texto-primario {
     color: var(--colorPrimario);
 }
-.seccion{
+
+.seccion {
     padding: 5rem 0;
 }
 
@@ -141,14 +144,17 @@ hr{
         align-items: center;
         justify-content: flex-end;
     }
-    .menu-principal .menu{
+
+    .menu-principal .menu {
         display: flex;
         justify-content: space-around;
     }
-    .menu-principal li{
+
+    .menu-principal li {
         margin-right: 2rem;
     }
-    .menu-principal li:last-of-type{
+
+    .menu-principal li:last-of-type {
         margin-right: 0;
     }
 }
@@ -160,14 +166,16 @@ hr{
     padding: .5rem 2rem;
     display: block;
 }
-@media (min-width: 768px) { 
-    .menu-principal a{
+
+@media (min-width: 768px) {
+    .menu-principal a {
         font-size: 2.6rem;
         position: relative;
         z-index: 1;
     }
+
     .menu-principal a::before,
-    .menu-principal a::after{
+    .menu-principal a::after {
         position: absolute;
         left: 0;
         content: '';
@@ -179,53 +187,59 @@ hr{
         transform: scaleX(0);
         transition: transform .6s;
     }
-    .menu-principal a::before{
+
+    .menu-principal a::before {
         top: 0;
         transform-origin: left;
     }
-    .menu-principal a::after{
+
+    .menu-principal a::after {
         top: 50%;
         transform-origin: right;
     }
-    .menu-principal a:hover::before{
+
+    .menu-principal a:hover::before {
         transform: scaleX(1);
     }
-    .menu-principal a:hover::after{
+
+    .menu-principal a:hover::after {
         transform: scaleX(1);
     }
 }
-.menu-principal .current_page_item{
+
+.menu-principal .current_page_item {
     border-bottom: 3px solid var(--colorPrimario);
 }
 
 
 /** Reescribir estilos menú movil **/
-.slicknav_menu{
+.slicknav_menu {
     background-color: var(--grisOscuro);
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-@media (min-width: 768px) { 
-    .slicknav_menu{
+@media (min-width: 768px) {
+    .slicknav_menu {
         display: none;
     }
-    
+
 }
 
-.slicknav_btn{
+.slicknav_btn {
     background-color: var(--colorPrimario);
     margin: 3rem 0;
     padding: 1.5rem;
 }
 
-.slicknav_nav a{
+.slicknav_nav a {
     font-size: 2.4rem;
     text-align: center;
     font-family: var(--fuentePrincipal);
 }
-.slicknav_nav a:hover{
+
+.slicknav_nav a:hover {
     background: transparent;
     color: var(--colorPrimario);
 }
@@ -233,46 +247,52 @@ hr{
 
 /** FOOTER **/
 
-.contenido-footer{
+.contenido-footer {
     padding: 4rem 0;
 }
-@media (min-width: 768px) { 
-    .contenido-footer{
+
+@media (min-width: 768px) {
+    .contenido-footer {
         display: flex;
         justify-content: space-between;
     }
 }
-.site-footer .menu-principal{
+
+.site-footer .menu-principal {
     display: block;
 }
-.site-footer a{
+
+.site-footer a {
     color: var(--negro);
     text-align: center;
     font-size: 2.4rem;
     padding: 0 1rem;
 }
-.site-footer .menu-principal .current_page_item{
+
+.site-footer .menu-principal .current_page_item {
     border: none;
 }
 
-@media (min-width: 768px) { 
-    .site-footer .menu-principal .current_page_item{
+@media (min-width: 768px) {
+    .site-footer .menu-principal .current_page_item {
         border-bottom: 3px solid var(--colorPrimario);
     }
 }
 
 .site-footer .menu-principal a::before,
-.site-footer .menu-principal a::after{
+.site-footer .menu-principal a::after {
     display: none;
 }
-.copyright{
+
+.copyright {
     text-align: center;
     font-family: var(--fuentePrincipal);
     font-size: 1.8rem;
     margin: 2rem 0 0 0;
 }
-@media (min-width: 768px) { 
-    .copyright{
+
+@media (min-width: 768px) {
+    .copyright {
         font-size: 2.8rem;
         margin: 0;
     }
@@ -280,28 +300,129 @@ hr{
 
 
 /** PAGE **/
-h1{
+h1 {
     margin-bottom: 4rem;
 }
-@media (min-width: 768px) { 
-    .pagina.con-sidebar{
+
+@media (min-width: 768px) {
+    .pagina.con-sidebar {
         display: flex;
         justify-content: space-between;
     }
-    .con-sidebar .contenido-principal{
+
+    .con-sidebar .contenido-principal {
         flex: 0 0 calc(65% - 2rem);
-    } 
-    .con-sidebar .sidebar{
+    }
+
+    .con-sidebar .sidebar {
         flex: 0 0 calc(35% - 2rem);
-    }    
+    }
 }
 
 /** SIN SIDEBAR **/
-.no-sidebar{
+.no-sidebar {
     display: flex;
     justify-content: center;
 }
-.no-sidebar .contenido-principal{
+
+.no-sidebar .contenido-principal {
     flex: 0 1 800px;
 }
 
+/** Single Clases **/
+.informacion-clase{
+    font-weight: 700;
+    font-family: var(--fuenteSecundaria);
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+/** Clases **/
+.lista-clases {
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .lista-clases {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+/** Cards **/
+
+@media (min-width: 768px) {
+    .gradient::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+39,0.3+69,0.7+100 */
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 39%, rgba(0, 0, 0, 0.3) 69%, rgba(0, 0, 0, 0.7) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 39%, rgba(0, 0, 0, 0.3) 69%, rgba(0, 0, 0, 0.7) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 39%, rgba(0, 0, 0, 0.3) 69%, rgba(0, 0, 0, 0.7) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);
+        /* IE6-9 */
+
+
+    }
+}
+
+.card {
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex: 0 0 calc(50% - 2rem);
+        position: relative;
+    }
+}
+
+.card img {
+    display: block;
+}
+
+.card .contenido {
+    padding: 3rem;
+}
+
+@media (min-width: 768px) {
+    .card .contenido {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: left;
+        z-index: 2;
+    }
+}
+
+.card .contenido h3 {
+    line-height: 1;
+    color: var(--colorPrimario);
+}
+
+@media (min-width: 768px) {
+    .card .contenido h3 {
+        color: var(--blanco);
+    }
+}
+
+.card .contenido p {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .card .contenido p {
+        color: var(--colorPrimario);
+    }
+}
