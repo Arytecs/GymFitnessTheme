@@ -552,6 +552,24 @@ h1 {
     font-size: 1.4rem;
 }
 
+/** Widget **/
+.widget{
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--grisClaro);
+}
+.widget:first-of-type{
+    padding-top: 0;
+}
+.widget:last-of-type{
+    border: none;
+}
+.widget a{
+    color: var(--negro);
+}
+.widget a:hover{
+    color: var(--colorPrimario);
+}
+
 /** Galeria **/
 .galeria-imagenes {
     display: grid;
