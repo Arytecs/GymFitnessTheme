@@ -353,18 +353,21 @@ h1 {
     }
 }
 
-.listado-blog .card .contenido{
+.listado-blog .card .contenido {
     padding: 0 2rem 2rem 2rem;
     text-align: center;
 }
-.listado-blog .card h3{
+
+.listado-blog .card h3 {
     margin: 0;
 }
-@media (min-width: 768px) { 
-    .listado-blog .card .contenido{
+
+@media (min-width: 768px) {
+    .listado-blog .card .contenido {
         text-align: left;
     }
 }
+
 /** Cards **/
 
 @media (min-width: 768px) {
@@ -472,7 +475,7 @@ h1 {
 .post-categories {
     display: flex;
     justify-content: center;
-    
+
 }
 
 @media (min-width: 768px) {
@@ -502,11 +505,12 @@ h1 {
     font-family: var(--fuentePrincipal);
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     .post-categories li a {
         color: var(--blanco);
     }
 }
+
 .post-categories li:last-of-type {
     margin-right: 0;
 }
@@ -553,20 +557,24 @@ h1 {
 }
 
 /** Widget **/
-.widget{
+.widget {
     padding: 2rem 0;
     border-bottom: 1px solid var(--grisClaro);
 }
-.widget:first-of-type{
+
+.widget:first-of-type {
     padding-top: 0;
 }
-.widget:last-of-type{
+
+.widget:last-of-type {
     border: none;
 }
-.widget a{
+
+.widget a {
     color: var(--negro);
 }
-.widget a:hover{
+
+.widget a:hover {
     color: var(--colorPrimario);
 }
 
@@ -610,4 +618,60 @@ h1 {
     }
 }
 
-/** Blog **/
+/** Formulario de Contacto **/
+.wpcf7-form label {
+    font-weight: 700;
+}
+
+.wpcf7-form .wpcf7-form-control {
+    width: 100%;
+    padding: 1rem;
+    height: 4rem;
+    border: 1px solid var(--grisClaro);
+}
+
+.wpcf7-form .wpcf7-textarea {
+    height: 20rem;
+}
+
+.wpcf7-form .wpcf7-submit {
+    background-color: var(--colorPrimario);
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    padding: 1.2rem;
+    height: auto;
+    color: var(--blanco);
+
+}
+
+.wpcf7-form .wpcf7-submit:hover {
+    cursor: pointer;
+}
+
+.wpcf7-form .wpcf7-validation-errors {
+    background-color: #f7e700;
+    text-align: center;
+}
+
+div.wpcf7 .ajax-loader {
+    display: block;
+    margin: 0 auto;
+}
+
+span.wpcf7-not-valid-tip {
+    background-color: red;
+    color: var(--blanco);
+    padding-left: 1rem;
+}
+
+div.wpcf7-mail-sent-ok {
+    background-color: #398f14;
+    color: var(--blanco);
+    text-align: center;
+    font-weight: 700;
+}
+
+/** Mapa **/
+#mapa {
+    height: 350px;
+}
